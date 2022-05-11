@@ -1,0 +1,42 @@
+{
+    "name": "typescript-template",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "start": "tsc && node dist/index.js",
+        "production-build": "tsc",
+        "production-start": "tsc && node dist/index.js",
+        "clean": "rm -rf ./dist/*.* && rm -rf ./tmp",
+        "lint": "eslint . --ext js,ts",
+        "lint:fix": "eslint --fix . --ext js,ts",
+        "format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
+        "type-check": "tsc --project tsconfig.json --pretty --noEmit"
+    },
+    "main": "./dist/index.js",
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "@types/puppeteer": "^3.0.1",
+        "cloudscraper": "^4.6.0",
+        "folder-logger": "^1.0.9",
+        "puppeteer": "^5.0.0",
+        "puppeteer-extra": "^3.1.12",
+        "puppeteer-extra-plugin-stealth": "^2.4.12",
+        "request": "^2.88.2"
+    },
+    "devDependencies": {
+        "@types/module-alias": "2.0.0",
+        "@types/node": "^14.0.20",
+        "prettier": "^2.0.5",
+        "typescript": "^3.9.6",
+        "@typescript-eslint/eslint-plugin": "4.21.0",
+        "@typescript-eslint/parser": "4.21.0",
+        "eslint": "^7.12.1",
+        "eslint-config-standard": "16.0.2",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jest": "24.3.5",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^4.2.1"
+    }
+}
