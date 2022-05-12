@@ -109,7 +109,6 @@ export const goto = async (
       Logger.debug(`Page with error: ${targetUrl}\n`)
     }
 
-    await page.waitFor(5000)
     return false
   }
 }
